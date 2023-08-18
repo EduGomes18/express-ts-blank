@@ -1,0 +1,76 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "globals": {
+    "appRoot": true,
+    "modelsPath": true,
+    "modulesPath": true,
+    "describe": true,
+    "it": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "agent": true,
+    "test": true,
+    "server": true,
+    "before": true,
+    "after": true
+  },
+  "rules": {
+    "no-var": "error",
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "max-lines": ["error", 250],
+    "max-lines-per-function": ["error", 30],
+    "no-unused-vars": ["error", { "args": "none" }],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "camelcase": ["error", { "properties": "always" }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "complexity": ["error", { "max": 10 }],
+    "arrow-spacing": "error",
+    "curly": "error",
+    "dot-notation": "error",
+    "eol-last": "error",
+    "generator-star-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "no-buffer-constructor": "error",
+    "no-confusing-arrow": "error",
+    "no-console": "warn",
+    "no-magic-numbers": [
+      "error",
+      {
+        "enforceConst": true,
+        "ignoreArrayIndexes": true,
+        "ignore": [-1, 1, 0, 2, 3]
+      }
+    ],
+    "no-multi-spaces": "error",
+    "no-path-concat": "error",
+    "no-self-compare": "error",
+    "no-throw-literal": "error",
+    "no-trailing-spaces": "error",
+    "no-unused-expressions": "error",
+    "no-useless-concat": "error",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "directive", "next": "*" }
+    ],
+    "prefer-const": "error",
+    "prefer-promise-reject-errors": "error",
+    "prefer-template": "error",
+    "object-shorthand": "error",
+    "strict": ["error", "global"],
+    "yoda": "error"
+  }
+}
