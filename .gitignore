@@ -5,3 +5,5 @@ logs/
 test-coverage/**
 package-lock.json
 .vscode/
+dist
+coverage
